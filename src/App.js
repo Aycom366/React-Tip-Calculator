@@ -8,13 +8,13 @@ function App() {
   const [billError, setbillError] = useState(false);
   const [isbill, setIsBill] = useState(false);
   const [customError, setCustomError] = useState(false);
-  const [billValue, setBillValue] = useState();
+  const [billValue, setBillValue] = useState(0);
   const [tipAmount, setTipAmount] = useState(0);
-  const [customValue, setCustomValue] = useState("");
+  const [customValue, setCustomValue] = useState(0);
   const [totalBill, setTotalBill] = useState(0);
 
   //no of people
-  const [people, setPeople] = useState();
+  const [people, setPeople] = useState(0);
 
   //error validations
   const [ispeople, setIsPeople] = useState(true);
@@ -25,7 +25,7 @@ function App() {
     setIsBill(false);
     setBillValue(0);
     setTipAmount(0);
-    setCustomValue();
+    setCustomValue(0);
     setTotalBill(0);
     setPeople(0);
   };
