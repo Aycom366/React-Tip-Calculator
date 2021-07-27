@@ -23,11 +23,11 @@ function App() {
   const reset = () => {
     setbillError(false);
     setIsBill(false);
-    setBillValue();
+    setBillValue("");
     setTipAmount(0);
     setCustomValue(0);
     setTotalBill(0);
-    setPeople();
+    setPeople("");
   };
 
   //check for changes in bill value and remow the error message
