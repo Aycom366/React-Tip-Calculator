@@ -51,7 +51,7 @@ function App() {
         calculateTips(0);
       }
     }
-  }, [billValue, people]);
+  }, [customValue, people, billValue]);
 
   function calculateTips(percentages) {
     let BillValue = billValue;
@@ -86,7 +86,7 @@ function App() {
       setIsPeople(true);
       setCustomError(true);
     }
-  }, [people]);
+  }, [customValue, people, billValue]);
 
   return (
     <div className="section">
